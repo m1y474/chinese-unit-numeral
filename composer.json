@@ -1,5 +1,5 @@
 {
-  "name": "m1y474/chinese-numeral",
+  "name": "m1y474/chinese-unit-numeral",
   "description": "convert to chinese numeral",
   "require": {
     "php": ">=7.1"
