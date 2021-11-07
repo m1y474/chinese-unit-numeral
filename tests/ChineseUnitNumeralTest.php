@@ -1,16 +1,16 @@
 <?php
 
-use ChineseUnitNumber\ChineseUnitNumber;
+use ChineseUnitNumeral\ChineseUnitNumeral;
 use PHPUnit\Framework\TestCase;
 
-class ChineseUnitNumberTest extends TestCase
+class ChineseUnitNumeralTest extends TestCase
 {
     /**
      * @dataProvider values
      */
     public function test漢数字に変換される($excepted, $value, $format=true)
     {
-        $this->assertSame($excepted, (new ChineseUnitNumber())->convert($value, $format));
+        $this->assertSame($excepted, (new ChineseUnitNumeral())->convert($value, $format));
     }
 
     public function values()
