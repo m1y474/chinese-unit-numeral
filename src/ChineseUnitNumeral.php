@@ -24,7 +24,7 @@ class ChineseUnitNumeral
      *
      * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
      */
-    public function convert(int $value, $isFormat = true)
+    public static function convert(int $value, $isFormat = true)
     {
         // 1000以下の場合は単位を付けずに返却
         if ((int) $value < 1000) {

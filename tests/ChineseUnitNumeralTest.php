@@ -10,7 +10,7 @@ class ChineseUnitNumeralTest extends TestCase
      */
     public function test漢数字に変換される($excepted, $value, $format=true)
     {
-        $this->assertSame($excepted, (new ChineseUnitNumeral())->convert($value, $format));
+        $this->assertSame($excepted, ChineseUnitNumeral::convert($value, $format));
     }
 
     public function values()
