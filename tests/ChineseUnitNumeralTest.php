@@ -5,6 +5,14 @@ use PHPUnit\Framework\TestCase;
 
 class ChineseUnitNumeralTest extends TestCase
 {
+    public function test戦闘力()
+    {
+        // 変換される
+        $this->assertSame('私の戦闘力は53万です', '私の戦闘力は'.ChineseUnitNumeral::convert(530000).'です');
+        // 変換されない
+        $this->assertSame('戦闘力…たったの5か…ゴミめ…', '戦闘力…たったの'.ChineseUnitNumeral::convert(5).'か…ゴミめ…');
+    }
+
     /**
      * @dataProvider values
      */
