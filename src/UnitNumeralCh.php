@@ -1,11 +1,11 @@
 <?php
 
-namespace ChineseUnitNumeral;
+namespace UnitNumeralCh;
 
 /**
  * 漢数字の単位をつける
  */
-class ChineseUnitNumeral
+class UnitNumeralCh
 {
     /**
      * 漢数字の単位

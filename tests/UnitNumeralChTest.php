@@ -1,16 +1,16 @@
 <?php
 
-use ChineseUnitNumeral\ChineseUnitNumeral;
+use UnitNumeralCh\UnitNumeralCh;
 use PHPUnit\Framework\TestCase;
 
-class ChineseUnitNumeralTest extends TestCase
+class UnitNumeralChTest extends TestCase
 {
     public function test戦闘力()
     {
         // 変換される
-        $this->assertSame('私の戦闘力は53万です', '私の戦闘力は'.ChineseUnitNumeral::convert(530000).'です');
+        $this->assertSame('私の戦闘力は53万です', '私の戦闘力は'.UnitNumeralCh::convert(530000).'です');
         // 変換されない
-        $this->assertSame('戦闘力…たったの5か…ゴミめ…', '戦闘力…たったの'.ChineseUnitNumeral::convert(5).'か…ゴミめ…');
+        $this->assertSame('戦闘力…たったの5か…ゴミめ…', '戦闘力…たったの'.UnitNumeralCh::convert(5).'か…ゴミめ…');
     }
 
     /**
@@ -18,7 +18,7 @@ class ChineseUnitNumeralTest extends TestCase
      */
     public function test漢数字に変換される($excepted, $value, $format=true)
     {
-        $this->assertSame($excepted, ChineseUnitNumeral::convert($value, $format));
+        $this->assertSame($excepted, UnitNumeralCh::convert($value, $format));
     }
 
     public function values()

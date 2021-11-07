@@ -1,6 +1,6 @@
 {
-  "name": "m1y474/chinese-unit-numeral",
-  "description": "convert to chinese numeral",
+  "name": "m1y474/unit-numeral-ch",
+  "description": "convert to chinese unit numeral",
   "require": {
     "php": ">=7.1"
   },
