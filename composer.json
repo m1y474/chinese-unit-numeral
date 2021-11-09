@@ -12,7 +12,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "ChineseUnitNumeral\\": "src/"
+      "UnitNumeralCh\\": "src/"
     }
   },
   "authors": [
